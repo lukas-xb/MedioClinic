@@ -1,9 +1,10 @@
-// Active menu buttons
-/* $(window).load(function() {
-    $('a.btn-flat').click(function() {
-      $(this).toggleClass("active");
+/* Languages dropsown */
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown({
+        hover: false,
     });
-  }); */
+});
+
 
 
   /* Contact us page - Google map */
