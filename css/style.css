@@ -1,0 +1,320 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ /* 
+==== KENTICO MATERIALIZE OVERRIDES ===
+*/
+
+ html {
+  line-height: 1.5;
+  font-family: -apple-system, 'Source Sans Pro', BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  color: #455A64;
+}
+
+body {
+  overflow:scroll;
+}
+
+nav a {
+  color: #455A64
+}
+
+nav .brand-logo {
+  font-size: 1.2rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+  padding: 0;
+  font-variant-caps: all-small-caps;
+  font-stretch: condensed;
+  color: #90A4AE; 
+}
+
+nav ul a {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-size: 16px !important; 
+  color: #455A64;
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+  font-variant-caps: all-small-caps;+
+  
+}
+
+nav ul a:hover {
+  background-color: white;
+}
+
+.section.section-top {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+
+.card-title a {
+  color: #455A64;
+}
+
+.footer-copyright a {
+  color: #90A4AE;
+}
+
+h1 {
+  font-weight: 900;
+  color: #455A64;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight:bold;
+}
+
+h4 {
+  font-size:2rem;
+  font-weight: 900;
+  color:#455a64;
+}
+
+h5 {
+  font-weight: 100;
+}
+
+
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #C62828;
+}
+
+.card-title {
+  margin-left: 24px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.card .card-content {
+  padding-top:0px;
+  padding-bottom:10px;
+  padding-left:24px;
+}
+
+.card.large .card-content {
+  max-height:60%;
+  padding-bottom: 10px;
+  padding-top:10px;
+}
+
+.btn-flat {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 56px;
+  line-height: 30px;
+  padding: 22px 0px 0px 0px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+/* 
+.btn-flat.selected {
+   border-bottom: 1px solid #C62828;
+   font-weight: bold;
+} */
+
+.kn-current {
+  border-bottom: 1px solid  #C62828;
+  font-weight: bold;
+}
+
+
+/* 
+=== KENTICO CUSTOM CLASSES ===
+*/
+
+.kn-header-gradient {
+  background: rgb(49,168,236);
+  background: linear-gradient(90deg, rgba(49,168,236,1) 11%, rgba(128,216,255,1) 100%);
+  z-index:-1;
+  overflow:hidden;
+  position:relative;
+}
+
+.kn-header {
+  z-index: initial !important;
+  position:relative;
+  overflow:hidden;
+}
+
+.kn-light {
+  color: #eceff1; 
+  font-weight: lighter; 
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.kn-logo {
+  height:45px;
+  vertical-align: middle;
+  margin:5px;
+}
+
+.kn-smaller {
+  font-size:75%;
+  }  
+
+.kn-social /* footer social buttons*/
+{
+  display: inline-block;
+  margin-left: 0;
+  margin-right:0;
+  font-size:0px;
+}
+
+.kn-address {
+  display: block;
+  font-style: normal !important;
+}
+
+.kn-address.heading {
+  font-size: 1.2rem;
+}
+
+.kn-doctor-badges {
+  max-height:20%;
+  padding:0px 0px 10px 24px;
+  overflow:hidden;
+}
+
+.kn-doctor-badge {
+  min-width: 3rem;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 22px;
+  font-variant-caps: all-small-caps;
+  height: 22px;
+  float: left;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+span.kn-doctor-badge.opened {
+  background-color: #398BCB;
+}
+
+  span.kn-doctor-badge.closed {
+  background-color: #CFD8DC;
+}
+
+
+.kn-icons {
+  width: 50px;
+}
+
+.kn-center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+.kn-contact-header {
+  margin:0;
+}
+
+.kn-contact-us-box {
+  background-color:#455A64;
+  padding: 20px;
+}
+
+/* .contact-us-box .contact-box-header {
+  max-height: 15%;
+} */
+
+.kn-contact-us-box .kn-contact-box-header h5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color:#fff;
+}
+
+.kn-contact-us-box .kn-contact-content {
+  /* max-height:60%; */
+  color:#fff;
+}
+
+.kn-contact-us-box .kn-contact-content p {
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.kn-contact-us-box .kn-contact-us-box-social {
+  margin:0;
+  /* max-height:20%; */
+}
+
+
+.kn-header h1 {
+  color: #fff;
+}
+
+.kn-doctor-profile {
+  padding:30px 0px;
+}
+
+.kn-doctor-profile img {
+ max-width:100%;
+ padding:15px;
+ overflow: hidden;
+}
+
+.kn-doctor-profile-box {
+  padding:0px;
+}
+
+.kn-doctor-profile-header {
+ padding:0px;
+}
+
+
+.kn-doctor-profile-degree {
+  padding: 20px 0;
+}
+
+
+.kn-doctor-profile-bio {
+  padding:0;
+}
+
+.kn-doctor-profile h5 {
+  font-size:1rem;
+  font-weight:bold;
+  padding-bottom:0;
+  margin:0px;
+}
+
+.kn-doctor-profile-bio p {
+  padding: 0px;
+  margin:0px;
+  font-size:normal;
+}
+
+.kn-doctor-profile-open {
+padding:25px 0;
+}
+
+.kn-doctor-profile-open tr, td, th {
+  padding:2px;
+}
+
+.kn-map {
+  height:400px;
+}
+
