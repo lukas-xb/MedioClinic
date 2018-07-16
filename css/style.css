@@ -92,6 +92,10 @@ h5 {
   font-weight: 100;
 }
 
+a {
+  color:#C62828
+}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #C62828;
 }
