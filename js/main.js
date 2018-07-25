@@ -1,7 +1,10 @@
-/* Languages dropsown */
-$(document).ready(function(){
+$(function () {
+    // sidenav
+    $('.sidenav').sidenav();
+
+    // languages dropdown
     $(".dropdown-trigger").dropdown({
-        hover: false,
+        hover: false
     });
 });
 
