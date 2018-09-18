@@ -6,19 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Medio Clinic - Contact us</title>
     <!-- CSS  -->
-    <link rel="icon" type="image/png" href="assets/Logo/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/Logo/favicon.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+        <script type="text/javascript">
+          function initMap() {
+
+var mapOptions = {
+    zoom: 3,
+    center: { lat: 0, lng: 0 },
+    mapTypeId: google.maps.MapTypeId.HYBRID
+};
+
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+var marker = new google.maps.Marker({
+    position: {
+        lat: 51.5,
+        lng: -0.15,
+    },
+    map: map
+});
+
+marker.setMap(map);
+
+var devwindow = new google.maps.InfoWindow({
+    content: "Example location"
+});
+
+devwindow.open(map, marker);
+}
+        </script>
 </head>
 
 <body>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="test-index.html" class="brand-logo">
-                <img class="kn-logo" src="assets/Logo/Logoic.png">Medio Clinic</a>
+            <a id="logo-container" href="index.html" class="brand-logo">
+                <img class="kn-logo" src="assets/Logo/Logoic.png">
+                <strong>Medio</strong>Clinic
+            </a>
             <!-- Languages selector -->
             <ul id="langs" class="dropdown-content">
                 <li>
@@ -28,7 +58,7 @@
                     <a href="#">ESP</a>
                 </li>
             </ul>
-            <ul id="right" class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down">
                 <li>
                     <a href="test-index.html">Home</a>
                 </li>
@@ -60,12 +90,12 @@
             </a>
         </div>
     </nav>
+    <!-- Conract header -->
     <div class="section kn-section-top">
         <div class="container">
-            <!-- Contact us header section -->
             <div class="row">
                 <div class="col s12 m12">
-                    <h1 class="header ">Contact Us</h1>
+                    <h1 class="header">Contact Us</h1>
                 </div>
             </div>
             <div class="row">
@@ -98,11 +128,9 @@
     </div>
     <div class="container">
         <div class="section">
-
             <div class="row">
                 <div class="col s12 m12">
                     <div id="map" class="kn-map">
-                        soe
                     </div>
                 </div>
             </div>
@@ -116,7 +144,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                     <div class="kn-medcenter">
                         <div class="kn-medcenter-image">
                             <img src="assets\Medical Centers photos\primarycare.jpg" alt="Primary Care">
@@ -135,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                     <div class="kn-medcenter">
                         <div class="kn-medcenter-image">
                             <img src="assets\Medical Centers photos\familymedicine.jpg" alt="Primary Care">
@@ -154,10 +182,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                     <div class="kn-medcenter">
                         <div class="kn-medcenter-image">
-                            <img src="assets\Medical Centers photos\gynecologists.jpg" alt="Primary Care">
+                            <img src="assets\Medical Centers photos\gynecologists.jpg" alt="Women's health">
 
                         </div>
                         <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
@@ -173,10 +201,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                     <div class="kn-medcenter">
                         <div class="kn-medcenter-image">
-                            <img src="assets\Medical Centers photos\cardioclinic.jpg" alt="Primary Care">
+                            <img src="assets\Medical Centers photos\cardioclinic.jpg" alt="Cardio Clinic">
 
                         </div>
                         <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
@@ -192,10 +220,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                     <div class="kn-medcenter">
                         <div class="kn-medcenter-image">
-                            <img src="assets\Medical Centers photos\orthopedics.jpg" alt="Primary Care">
+                            <img src="assets\Medical Centers photos\orthopedics.jpg" alt="Orthopedics">
 
                         </div>
                         <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
@@ -211,10 +239,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12">
+                <div class="col l4 m12 s12">
                         <div class="kn-medcenter">
                             <div class="kn-medcenter-image">
-                                <img src="assets\Medical Centers photos\diabetes.jpg" alt="Primary Care">
+                                <img src="assets\Medical Centers photos\diabetes.jpg" alt="Diabetes">
     
                             </div>
                             <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
@@ -297,7 +325,7 @@
     <script src="js/main.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqj371OzjrUb_iYNf4N-sUF_Y1JG8ePGc&callback=medioClinicMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqj371OzjrUb_iYNf4N-sUF_Y1JG8ePGc&callback=initMap"></script>
 
 </body>
 

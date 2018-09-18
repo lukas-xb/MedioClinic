@@ -9,8 +9,8 @@ $(function () {
 });
 
 
-
-  /* Contact us page - Google map */
+/*
+  /* Contact us page - Google map 
   function medioClinicMap(){
 
     var myLatLng = { lat: 51.5, lng: -0.15};
@@ -29,9 +29,48 @@ $(function () {
     });
 
     var devwindow = new google.maps.InfoWindow({
-        content: "Just an example of a map."
+        content: "Example location"
     });
 
     devwindow.open(map, marker);
 }
+*/
 
+$(function () {
+    // sidenav
+    $('.sidenav').sidenav();
+
+    // languages dropdown
+    $(".dropdown-trigger").dropdown({
+        hover: false
+    });
+});
+
+
+  /* Contact us page - Google map */
+  function initMap() {
+
+    var mapOptions = {
+        zoom: 3,
+        center: { lat: 0, lng: 0 },
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: {
+            lat: 51.5,
+            lng: -0.15,
+        },
+        map: map
+    });
+
+    marker.setMap(map);
+
+    var devwindow = new google.maps.InfoWindow({
+        content: "Example location"
+    });
+
+    devwindow.open(map, marker);
+}
