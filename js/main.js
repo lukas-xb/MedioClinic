@@ -68,9 +68,9 @@ $(function () {
 
     marker.setMap(map);
 
-    var devwindow = new google.maps.InfoWindow({
+    var InfoWindow = new google.maps.InfoWindow({
         content: "Example location"
     });
 
-    devwindow.open(map, marker);
+    InfoWindow.open(map, marker);
 }
