@@ -1,9 +1,9 @@
-$(function () {
-    // sidenav
-    $('.sidenav').sidenav();
+document.addEventListener("DOMContentLoaded", function() {
+    var sidenavElement = document.querySelector(".sidenav");
+    M.Sidenav.init(sidenavElement);
+    var dropdownElement = document.querySelector(".dropdown-trigger");
 
-    // languages dropdown
-    $(".dropdown-trigger").dropdown({
+    M.Dropdown.init(dropdownElement, {
         hover: false
     });
 });
@@ -35,7 +35,7 @@ $(function () {
     devwindow.open(map, marker);
 }
 */
-
+/*
 $(function () {
     // sidenav
     $('.sidenav').sidenav();
@@ -48,14 +48,15 @@ $(function () {
 
 
   /* Contact us page - Google map */
-  function initMap() {
+/*
+function initMap() {
 
     var mapOptions = {
         zoom: 3,
         center: { lat: 0, lng: 0 },
         mapTypeId: google.maps.MapTypeId.HYBRID
     };
-    
+
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     var marker = new google.maps.Marker({
@@ -73,4 +74,5 @@ $(function () {
     });
 
     InfoWindow.open(map, marker);
-}
+} 
+*/
